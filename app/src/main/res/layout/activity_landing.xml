@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:layout_margin="20dp"
+    tools:context=".Landing_Activity">
+
+    <TextView
+        android:id="@+id/textViewPlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 1 Name:"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="36dp"/>
+
+    <EditText
+        android:id="@+id/editTextPlayer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player 1 Name"
+        android:drawableStart="@drawable/person"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewPlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2 Name:"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPlayer2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Player 2 Name"
+        android:layout_marginStart="16dp"
+        android:drawableStart="@drawable/person"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewTargetScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Target Score:"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextTargetScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Target Score"
+        android:layout_marginStart="16dp"
+        android:drawableStart="@drawable/score"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Game"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:onClick="startGame" />
+
+</LinearLayout>
